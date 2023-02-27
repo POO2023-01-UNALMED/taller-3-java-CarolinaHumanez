@@ -9,7 +9,7 @@ public class TV {
 	private boolean estado;
 	private int volumen;
 	public Control control;
-	numTV++;
+	static numTV++;
 	
 	public TV(Marca marca, Boolean estado) {
 		this.marca = marca;
@@ -18,6 +18,13 @@ public class TV {
 		this.estado = estado;
 		volumen = 1;
 		numTV++;
+	}
+
+	public int getNumTV() {
+		return numTV;
+	}
+	public void setNumTV(int num){
+		numTV=num;
 	}
 
 	public Marca getMarca() {
@@ -63,12 +70,6 @@ public class TV {
 		}
 	}
 
-	public int getNumTV() {
-		return numTV;
-	}
-	public void setNumTV(num){
-		numTV=num;
-	}
 	public void turnOn() {
 		estado = true;
 	}
