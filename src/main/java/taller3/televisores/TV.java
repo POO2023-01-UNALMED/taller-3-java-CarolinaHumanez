@@ -8,10 +8,10 @@ public class TV {
 	private int precio;
 	private boolean estado;
 	private int volumen;
-	public Control control;
-	static numTV++;
+	private Control control;
+	private static int numTV++;
 	
-	public TV(Marca marca, Boolean estado) {
+	public TV(Marca marca, boolean estado) {
 		this.marca = marca;
 		canal = 1;
 		precio = 500;
