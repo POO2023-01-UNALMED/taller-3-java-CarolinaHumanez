@@ -22,7 +22,7 @@ public class TV {
 		return numTV;
 	}
 	public void setNumTV(int num){
-		numTV=num;
+		this.numTV=num;
 	}
 
 	public Marca getMarca() {

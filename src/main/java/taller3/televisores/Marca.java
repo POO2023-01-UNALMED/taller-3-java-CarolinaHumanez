@@ -12,7 +12,7 @@ public class Marca {
 	}
 
 	public void setNombre(String name) {
-		nombre = name;
+		this.nombre = name;
 
 	}
 
